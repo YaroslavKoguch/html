@@ -1,0 +1,159 @@
+
+#mainpage1 DIV {
+    text-align: center;
+    margin: 20px;
+    }
+	
+.hamburger-menu {display: none;} 
+
+ @media screen and (max-width: 800px ){
+ 
+	.topmenu {display: none;}
+	.hamburger-menu {display: block;}
+ 
+ #menu__toggle {
+  opacity: 0;
+}
+ 
+#menu__toggle:checked ~ .menu__box {        /* відкриваємо меню */
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;            /* розтягує вмістиме на всю ширину*/
+  align-items: center;
+  position: fixed;         /* Робить фон нерухомим */
+  top: 20px;
+  left: 20px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;		/* курсор стає рукою при наведенні */
+  z-index: 1;           /* кнопка йде на верхній шар */
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+
+  width: 300px;
+  height: 100%;
+
+  margin: 0;
+  padding: 80px 0;
+
+  list-style: none;
+  background-color: #ECEFF1;
+  
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+
+  color: #333;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+ 
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+  table.mytable td{
+	  display: block;
+	 }
+	 
+ .img_size {
+	 width: 100vw;}
+	 
+ 
+ }
+ 
+
+.img_size{
+width:60%;
+height:60%;	
+}
+
+p, li{
+	font-family: "Arial";
+}
+h4{
+	font-family: 'Kaushan Script', cursive;
+}
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Libre+Baskerville');
+
+
+nav {
+  text-align: center;
+  padding: 40px 0 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  color: #222;
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li > a {
+  position: relative;                       /* положення елемента встановлюється відносно його початкового розміщення  */
+  padding: 10px 15px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5em;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+.topmenu li:hover a:before {
+  transform: translate(-50%, 0);			/* здвигає меню*/
+  
+}
+.submenu {
+  position: absolute;                       /* елемент абсолютно позиніонований */
+  z-index: 4;
+  left: 50%;
+  top: 100%;
+  width: 150px;
+  padding: 15px 0 15px;
+  margin-top: 5px;
+  background: white;
+  visibility: hidden;
+  
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.submenu a {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 11px;
+  padding: 5px 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #DCDCDC;
+    color: #fff;
+}
+

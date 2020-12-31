@@ -1,0 +1,65 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Application</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+
+</head>
+<div id="error"></div>
+<form id="form"  >
+	<div>
+				<h2>Order</h2>
+			<p></p>
+			</div>						
+		<ul>
+			<li>
+				<label > Surname </label>
+			<div>
+			<input pattern="^[A-Za-zА-Яа-яЁё]+$" required title="Дане поле не має містити цифри" type="text" maxlength="20"/> 
+			</div> 
+		</li>	
+		<li>
+    <label>Name</label>
+	<div>
+    <input id="name" name="name" type="text" >
+  </div>
+  </li>
+  <li>
+  <div>
+    <input id="password" name="password" type="password" placeholder="Enter Password">
+  </div>
+  </li>
+  <li>
+			<label >Type of order <br></label>
+			<span>
+			<input id="radio" name="radio"  type="radio"/>
+			<label >Phone</label>
+			<input id="radio" name="radio" type="radio"/>
+			<label>Tablet</label>	
+		</span> 
+		</li>	
+			<li>
+		<label>Color of Devise <br> </label>
+		<span>
+			<input  type="checkbox"/>
+			<label>White</label>
+			<input type="checkbox"/>
+			<label >Black</label>
+			<input type="checkbox"/>
+			<label>Grey</label>
+		</span> 
+		</li>	
+			<li>
+				<label >Email </label>
+		<div>
+				<input type="text" maxlength="255"/> 		
+		</div> 
+		</li>	
+				<li>
+			    <input type="hidden"/>
+			    
+				<input id="btn" value="Відправити" type="submit"/>
+				
+		</li>
+			</ul>
+</form>
+<script src='./js.js'></script>
